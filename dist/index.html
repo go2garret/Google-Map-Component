@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps Component Example</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <div class="centered-absolute d-flex flex-column" style="max-width:1000px;width:100%;height:100%;max-height:500px;">
+
+        <div class="d-flex align-center mb-2 mx-2">
+            <input id="address" class="form-control mr-2" placeholder="Search an address or place">
+            <button class="btn btn-primary text-nowrap wrap-none" id="searchButton">
+                <div class="d-flex items-center">🔎 search</div>
+            </button>
+        </div>
+        
+
+        <div class="text-center w-100" style="flex-grow:1">
+            <div class="gmap_canvas w-100 h-100">
+                <iframe id="gmapIframe" class="rounded-lg w-100 h-100" 
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <script  src="./script.js"></script>
+    
+</body>
